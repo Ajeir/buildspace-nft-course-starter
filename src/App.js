@@ -51,6 +51,9 @@ const App = () => {
           <p className="sub-text">
             Each unique. Each beautiful. Discover your NFT today.
           </p>
+          <p className="sub-text">
+            By Zilla
+          </p>
           {renderNotConnectedContainer()}
         </div>
         <div className="footer-container">
