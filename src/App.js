@@ -38,7 +38,7 @@ const App = () => {
       console.log("No authorized account found");
     }
   };
-
+  
   /*
      Implement your connectWallet method here
     */
@@ -56,7 +56,7 @@ const App = () => {
       */
 
       const accounts = await ethereum.request({
-        method: "eth_accountAccounts",
+        method: "eth_requestAccounts",
       });
 
       console.log("Connected", accounts[0]);
@@ -67,7 +67,7 @@ const App = () => {
   };
 
   const askContractToMintNft = async () => {
-    const CONTRACT_ADDRESS = "0xb24d5B59CAeBF164A004E2054D54aaacFE45F961";
+    const CONTRACT_ADDRESS = "0xc95E63aE8152247406eFfFBeAF43C04f203339fa";
     try {
       const { ethereum } = window;
 
@@ -114,7 +114,7 @@ const App = () => {
    We want the "Connect to Wallet" button to dissapear if they've already connected their wallet!
    */
   const renderMintUI = () => (
-    <button onClick={null} className="cta-button connect-wallet-button">
+    <button onClick={askContractToMintNft} className="cta-button connect-wallet-button">
       Mint NFT
     </button>
   );
