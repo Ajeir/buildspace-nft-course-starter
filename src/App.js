@@ -128,7 +128,7 @@ const App = () => {
             Each unique. Each beautiful. Discover your NFT today.
           </p>
           <p className="sub-text">By Zilla</p>
-          {renderMintUI()}
+          {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
