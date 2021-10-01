@@ -2,6 +2,7 @@ import "./styles/App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
+import cyber from "/Users/ajeir/Documents/GitHub/buildspace-nft-course-project/src/assets/cyber.png";
 import myEpicNft from "/Users/ajeir/Documents/GitHub/buildspace-nft-course-project/src/utils/myEpicNft.json";
 
 // Constants
@@ -130,6 +131,7 @@ const App = () => {
           <p className="sub-text">By Zilla</p>
           {currentAccount === "" ? renderNotConnectedContainer() : renderMintUI()}
         </div>
+            <img className= "int" src={cyber} alt="" />
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
