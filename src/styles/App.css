@@ -75,7 +75,19 @@
 
 
 .opensea-button {
-  background-color: rgb(32, 129, 226);
+  background: -webkit-linear-gradient(left, #04a3ff, #f825ff);
+  background-size: 200% 200%;
+  height: 15px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold; 
+  color: white;
+  
 }
 
 .mint-count {
@@ -98,7 +110,10 @@
   height: 35px;
 }
 
+
+
 .footer-text {
+  padding: 10px;
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: bold;
@@ -138,3 +153,4 @@
     background-position: 0% 50%;
   }
 }
+
