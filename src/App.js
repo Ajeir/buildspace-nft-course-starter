@@ -2,8 +2,8 @@ import "./styles/App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import cyber from "src/cyber.png";
-import myEpicNft from "/Users/ajeir/Documents/GitHub/buildspace-nft-course-project/src/utils/myEpicNft.json";
+import cyber from "./images/cyber.png";
+import myEpicNft from "./utils/myEpicNft.json";
 
 // Constants
 
